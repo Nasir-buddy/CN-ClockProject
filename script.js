@@ -1,5 +1,9 @@
 // selecting the clock element to show the clock 
 const clockElement = document.getElementById('clock');
+const hourElement = document.getElementById('hours');
+const minuteElement = document.getElementById('minutes');
+const secondElement = document.getElementById('seconds');
+const AM_PM = document.getElementById('AM-PM');
 
 // selecting the alarm time input box to select the alarm time  
 const alarmTimeInput = document.getElementById('alarm-time');
@@ -29,8 +33,11 @@ function updateClock() {
 
 
     // showing all the time on the clock element on the HTML 
-    clockElement.textContent = `${hours.toString().padStart(2, '0')} : ${minutes} : ${seconds} : ${AMPM}`;
-
+    // clockElement.textContent = `${hours.toString().padStart(2, '0')} : ${minutes} : ${seconds} : ${AMPM}`;
+    hourElement.textContent = `${hours.toString().padStart(2, '0')}`;
+    minuteElement.textContent = `${minutes}`;
+    secondElement.textContent = `${seconds}`;
+    AM_PM.textContent = `${AMPM}`;
     // calling the check alarm function. 
     checkAlarm();
 }
