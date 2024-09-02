@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div class="h-screen bg-zinc-400 flex flex-col items-center justify-center">
+        <div id="clock" class="mb-2 text-5xl"></div>
+        <div class="w-1/2 flex justify-center items-center p-5 gap-5" >
+            <input type="time" id="alarm-time" class="p-2 border rounded" step="1"/>
+            <button id="set-alarm" class="bg-blue-600 p-2 text-white border border-black rounded ml-2 ">Set Alarm</button>
+        </div>
+
+        <div class="w-1/2 max-s-md bg-white p-4 rounded shadow-lg mt-4">
+            <h2 class="text-lg font-semibold mb-2">Alarm List</h2>
+            <div id="alarm-list"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
