@@ -1,8 +1,10 @@
-// selecting the clock element to show the clock 
-const clockElement = document.getElementById('clock');
+// selecting the hour element to show the clock.
 const hourElement = document.getElementById('hours');
+// selecting the minute element.
 const minuteElement = document.getElementById('minutes');
+// selecting the seconds element. 
 const secondElement = document.getElementById('seconds');
+// selecting the AMPM element.
 const AM_PM = document.getElementById('AM-PM');
 
 // selecting the alarm time input box to select the alarm time  
